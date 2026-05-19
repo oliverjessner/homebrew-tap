@@ -1,8 +1,8 @@
 class Itworksbut < Formula
   desc "Static CI scanner for JavaScript vibe-coding project risks"
   homepage "https://github.com/oliverjessner/ItWorksBut"
-  url "https://registry.npmjs.org/itworksbut/-/itworksbut-0.7.1.tgz"
-  sha256 "0f04e12282e3772f1754d6dc0dd5234ee6659fa2191a32af641b1ffee0d90a96"
+  url "https://registry.npmjs.org/itworksbut/-/itworksbut-0.7.2.tgz"
+  sha256 "32655e0648018e1b8541dc8173c0e810678b845ea35fc96f6206baf8b1cd0bc4"
   license "MIT"
 
   depends_on "node"
