@@ -1,8 +1,8 @@
 class SqliteHub < Formula
   desc "SQLite-only local management app backend and SPA shell"
   homepage "https://github.com/oliverjessner/sqlite-hub"
-  url "https://github.com/oliverjessner/sqlite-hub/archive/refs/tags/v0.9.9.tar.gz"
-  sha256 "4579614e2303d312691860c6e2fc4dded6c11472295df566eb5fd10ec3da2377"
+  url "https://github.com/oliverjessner/sqlite-hub/archive/refs/tags/v0.9.11.tar.gz"
+  sha256 "0f4df9cefe3553b34c87474f6c822148b21df96c6acf62dcd1d7a6ae81cb9a2c"
 
   depends_on "node"
   depends_on "python" => :build
