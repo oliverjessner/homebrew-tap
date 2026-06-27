@@ -1,22 +1,23 @@
 class Clipspin < Formula
-  desc "macOS clipboard cycler for JSON text snippets"
+  desc "Temporary second paste queue for macOS"
   homepage "https://github.com/oliverjessner/clipspin"
-  url "https://registry.npmjs.org/clipspin/-/clipspin-0.1.5.tgz"
-  sha256 "2b2be34ee9d68cee69d9fc31ddd3deea7f3533de7d29fd97c3aef1c3f978c8f1"
+  url "https://github.com/oliverjessner/clipspin/archive/refs/tags/v0.1.6.tar.gz"
+  sha256 "269420af44d3f8999dd1bf6327fb3d8090216e829f8dd1f54b4a913070fdedc3"
   license "MIT"
 
-  depends_on :macos
-  depends_on "node"
+  depends_on xcode: :build
 
   def install
-    system "npm", "install", *std_npm_args
-    prebuilds = libexec/"lib/node_modules/clipspin/node_modules/uiohook-napi/prebuilds"
-    keep = Hardware::CPU.arm? ? "darwin-arm64" : "darwin-x64"
-    prebuilds.children.each { |path| rm_r(path) if path.basename.to_s != keep }
-    bin.install_symlink libexec/"bin/clipspin"
+    if File.exist?("Package.swift")
+      system "swift", "build", "--configuration", "release", "--disable-sandbox"
+      bin.install ".build/release/clipspin"
+    else
+      system "swiftc", "main.swift", "-o", "clipspin"
+      bin.install "clipspin"
+    end
   end
 
   test do
-    assert_match "Usage:", shell_output("#{bin}/clipspin 2>&1", 1)
+    assert_match "Usage", shell_output("#{bin}/clipspin 2>&1", 1)
   end
 end
