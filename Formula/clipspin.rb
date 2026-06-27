@@ -1,8 +1,8 @@
 class Clipspin < Formula
   desc "macOS clipboard cycler for JSON text snippets"
   homepage "https://github.com/oliverjessner/clipspin"
-  url "https://github.com/oliverjessner/clipspin/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "9221fdf2d6e78a5c247e751b8d58405d83fc1b565a95152ffb824c592710a12c"
+  url "https://registry.npmjs.org/clipspin/-/clipspin-0.1.2.tgz"
+  sha256 "32468b090a430126e2a29938376bce7b664585b3f377b150bd2fca1d30deb9fa"
   license "MIT"
 
   depends_on :macos
