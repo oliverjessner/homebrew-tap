@@ -1,8 +1,8 @@
 class Clipspin < Formula
   desc "Temporary second paste queue for macOS"
   homepage "https://github.com/oliverjessner/clipspin"
-  url "https://github.com/oliverjessner/clipspin/archive/refs/tags/v0.1.7.tar.gz"
-  sha256 "5a44e966c526ab300b694b22a4657c9ae81bf5973d840aa86a38586bfb220d24"
+  url "https://github.com/oliverjessner/clipspin/archive/refs/tags/v0.1.8.tar.gz"
+  sha256 "8f710bae3069cb436cd040d782a9b2e259440e638a84b480d4ad11e1d031da92"
   license "MIT"
 
   depends_on xcode: :build
