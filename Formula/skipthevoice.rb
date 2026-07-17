@@ -1,9 +1,8 @@
 class Skipthevoice < Formula
   desc "Local UI and CLI for transcribing WhatsApp voice messages"
   homepage "https://github.com/oliverjessner/SkipTheVoice"
-  url "https://registry.npmjs.org/skipthevoice/-/skipthevoice-0.1.2.tgz"
-  sha256 "6abe34f2d06b0bd516ee6c0ec60c479cee6fe15299fbb53e0529a549f9677155"
-  revision 1
+  url "https://registry.npmjs.org/skipthevoice/-/skipthevoice-0.1.3.tgz"
+  sha256 "ac56b1427a9d43b058a5ec13496a0c4cdc7353fc9e80eadd6aeb31fbf9cda428"
 
   depends_on "ffmpeg"
   depends_on "node"
