@@ -3,6 +3,7 @@ class Skipthevoice < Formula
   homepage "https://github.com/oliverjessner/SkipTheVoice"
   url "https://registry.npmjs.org/skipthevoice/-/skipthevoice-0.1.1.tgz"
   sha256 "41f279fa5d2474b961ce5ba2b1d5bb8305c15e025ee4f10dde15bcbf3655bc4c"
+  revision 1
 
   depends_on "ffmpeg"
   depends_on "node"
@@ -10,6 +11,10 @@ class Skipthevoice < Formula
 
   def install
     system "npm", "install", *std_npm_args
+
+    cd libexec/"lib/node_modules/skipthevoice" do
+      system "npm", "rebuild", "better-sqlite3", "--build-from-source", "--ignore-scripts=false"
+    end
 
     whisper_python = formula_opt_libexec("openai-whisper")/"bin/python"
     worker_packages = libexec/"whisper-worker-packages"
@@ -28,6 +33,8 @@ class Skipthevoice < Formula
   test do
     assert_match "SkipTheVoice", shell_output("#{bin}/skipthevoice --help")
     assert_path_exists libexec/"lib/node_modules/skipthevoice/dist/web/server.js"
+    ENV["SKIPTHEVOICE_PROJECT_ROOT"] = testpath
+    assert_match "schemaReady", shell_output("#{bin}/skipthevoice db status")
     ENV["PYTHONPATH"] = libexec/"whisper-worker-packages"
     system formula_opt_libexec("openai-whisper")/"bin/python", "-c",
            "import fastapi, uvicorn, whisper"
