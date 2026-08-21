@@ -10,6 +10,7 @@ brew tap oliverjessner/tap
 | --- | --- | --- | --- |
 | `clipspin` | Formula | Temporary second paste queue for macOS | `brew install oliverjessner/tap/clipspin` |
 | `itworksbut` | Formula | Static CI scanner for JavaScript vibe-coding project risks | `brew install oliverjessner/tap/itworksbut` |
+| `redaction-research` | Formula | Find and review potentially incomplete PDF redactions locally | `brew install oliverjessner/tap/redaction-research` |
 | `skipthevoice` | Formula | Read WhatsApp voice messages as text with local Whisper | `brew install oliverjessner/tap/skipthevoice` |
 | `sqlite-hub` | Formula | SQLite-only local management app backend and SPA shell | `brew install oliverjessner/tap/sqlite-hub` |
 | `bulkpixel` | Cask | Local-first batch image converter | `brew install --cask oliverjessner/tap/bulkpixel` |
@@ -20,6 +21,7 @@ After tapping the repository, packages can also be installed with short names:
 ```sh
 brew install clipspin
 brew install itworksbut
+brew install redaction-research
 brew install skipthevoice
 brew install sqlite-hub
 brew install --cask bulkpixel
