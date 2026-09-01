@@ -9,6 +9,7 @@ brew tap oliverjessner/tap
 | Name | Type | Description | Installation |
 | --- | --- | --- | --- |
 | `clipspin` | Formula | Temporary second paste queue for macOS | `brew install oliverjessner/tap/clipspin` |
+| `fetchary` | Formula | Watch web pages for changes and archive exact response versions | `brew install oliverjessner/tap/fetchary` |
 | `itworksbut` | Formula | Static CI scanner for JavaScript vibe-coding project risks | `brew install oliverjessner/tap/itworksbut` |
 | `redaction-research` | Formula | Find and review potentially incomplete PDF redactions locally | `brew install oliverjessner/tap/redaction-research` |
 | `skipthevoice` | Formula | Read WhatsApp voice messages as text with local Whisper | `brew install oliverjessner/tap/skipthevoice` |
@@ -20,6 +21,7 @@ After tapping the repository, packages can also be installed with short names:
 
 ```sh
 brew install clipspin
+brew install fetchary
 brew install itworksbut
 brew install redaction-research
 brew install skipthevoice
