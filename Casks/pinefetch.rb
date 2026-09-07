@@ -1,6 +1,6 @@
 cask "pinefetch" do
-  version "1.8.1"
-  sha256 "ccb38db30972e2aab5913e7b0afbafc636a0554b62e2931a1b5bfbf74c632b35"
+  version "1.9.0"
+  sha256 "e43aa37fd47cb27199e2ede5f34463319d0876a752ae94e30a9ff81082ceb6cb"
 
   url "https://github.com/oliverjessner/PineFetch/releases/download/v#{version}/PineFetch_#{version}_aarch64_adhoc.dmg",
       verified: "github.com/oliverjessner/PineFetch/"
@@ -12,6 +12,7 @@ cask "pinefetch" do
   depends_on macos: :big_sur
 
   app "PineFetch.app"
+  binary "#{appdir}/PineFetch.app/Contents/MacOS/PineFetch", target: "PineFetch"
 
   zap trash: [
     "~/Library/Application Support/com.pinefetch.app",
