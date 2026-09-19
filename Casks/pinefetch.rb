@@ -1,6 +1,6 @@
 cask "pinefetch" do
-  version "2.1.0"
-  sha256 "b25923dd1c94b65aeda9da0c33a93eabf5725467c4dab6d0ce544a7a40d096b3"
+  version "2.2.0"
+  sha256 "4f23cbd4d0c9ec0a4a5c42d7a28ba89b597fe3d7cafaf58d56af11263b2ad5d3"
 
   url "https://github.com/oliverjessner/PineFetch/releases/download/v#{version}/PineFetch_#{version}_aarch64_adhoc.dmg",
       verified: "github.com/oliverjessner/PineFetch/"
