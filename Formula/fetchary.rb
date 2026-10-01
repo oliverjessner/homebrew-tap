@@ -1,8 +1,8 @@
 class Fetchary < Formula
-  desc "Watch web pages for changes and archive exact response versions"
+  desc "Archive exact web responses and rendered DOM changes"
   homepage "https://github.com/oliverjessner/fetchary"
-  url "https://registry.npmjs.org/fetchary/-/fetchary-0.4.0.tgz"
-  sha256 "9c111e721da6924c702edcb9c5746259da046e60369c3a6f0b760e959af95073"
+  url "https://registry.npmjs.org/fetchary/-/fetchary-1.0.0.tgz"
+  sha256 "a53c34b6e624f5569c2520c0d10d1d73dfe404ff284c919d9f21ea4f3d48ce75"
   license "MIT"
 
   depends_on "node"
