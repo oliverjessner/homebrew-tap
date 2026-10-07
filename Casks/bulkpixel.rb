@@ -1,6 +1,6 @@
 cask "bulkpixel" do
-  version "3.1.1"
-  sha256 "080c1cc5c9f5114ae09092e3414eaf2e00eefb49fd4b5a4c7e28fc2dd6c52f91"
+  version "3.1.2"
+  sha256 "19aa7051dd409ec9328a0a071c8122ce7cfa7cb356b226dcbc99974ee5e79c54"
 
   url "https://github.com/oliverjessner/BulkPixel/releases/download/v#{version}/BulkPixel_#{version}_aarch64_adhoc.dmg"
   name "BulkPixel"
@@ -8,7 +8,7 @@ cask "bulkpixel" do
   homepage "https://github.com/oliverjessner/BulkPixel"
 
   depends_on arch: :arm64
-  depends_on macos: :big_sur
+  depends_on :macos
 
   app "BulkPixel.app"
   binary "#{appdir}/BulkPixel.app/Contents/MacOS/bulkpixel", target: "bulkpixel"
