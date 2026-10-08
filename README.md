@@ -16,6 +16,7 @@ brew tap oliverjessner/tap
 | `sqlite-hub` | Formula | SQLite-only local management app backend and SPA shell | `brew install oliverjessner/tap/sqlite-hub` |
 | `bulkpixel` | Cask | Local-first batch image converter | `brew install --cask oliverjessner/tap/bulkpixel` |
 | `pinefetch` | Cask | Local-first yt-dlp desktop client | `brew install --cask oliverjessner/tap/pinefetch` |
+| `no-bullshit-rss` | Cask | Local-first RSS reader with clustered digests | `brew install --cask oliverjessner/tap/no-bullshit-rss` |
 
 After tapping the repository, packages can also be installed with short names:
 
@@ -28,6 +29,7 @@ brew install skipthevoice
 brew install sqlite-hub
 brew install --cask bulkpixel
 brew install --cask pinefetch
+brew install --cask no-bullshit-rss
 ```
 
 ## BulkPixel Cask
@@ -61,3 +63,14 @@ brew install --cask oliverjessner/tap/pinefetch
 ```
 
 The app is currently not signed with an Apple Developer ID or notarized. If macOS blocks the first launch, right-click `PineFetch.app` in `/Applications`, select `Open`, and confirm the dialog.
+
+## NO BULLSHIT RSS Cask
+
+Requires macOS 13 (Ventura) or newer on Apple Silicon. Homebrew installs the desktop app and links its bundled `no-bullshit-rss` CLI automatically; no separate Node.js installation is required.
+
+```sh
+brew install --cask oliverjessner/tap/no-bullshit-rss
+no-bullshit-rss --help
+```
+
+The app is currently not signed with an Apple Developer ID or notarized. If macOS blocks the first launch, right-click `NO BULLSHIT RSS.app` in `/Applications`, select `Open`, and confirm the dialog.
