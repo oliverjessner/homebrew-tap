@@ -8,7 +8,7 @@ cask "pitchary" do
   homepage "https://github.com/oliverjessner/pitchary"
 
   depends_on arch: :arm64
-  depends_on macos: ">= 26.4"
+  depends_on macos: :tahoe
 
   app "Pitchary.app"
 
