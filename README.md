@@ -62,8 +62,6 @@ brew tap oliverjessner/tap
 brew install --cask oliverjessner/tap/pinefetch
 ```
 
-The app is currently not signed with an Apple Developer ID or notarized. If macOS blocks the first launch, right-click `PineFetch.app` in `/Applications`, select `Open`, and confirm the dialog.
-
 ## NO BULLSHIT RSS Cask
 
 Requires macOS 13 (Ventura) or newer on Apple Silicon. Homebrew installs the desktop app and links its bundled `no-bullshit-rss` CLI automatically; no separate Node.js installation is required.
@@ -72,5 +70,3 @@ Requires macOS 13 (Ventura) or newer on Apple Silicon. Homebrew installs the des
 brew install --cask oliverjessner/tap/no-bullshit-rss
 no-bullshit-rss --help
 ```
-
-The app is currently not signed with an Apple Developer ID or notarized. If macOS blocks the first launch, right-click `NO BULLSHIT RSS.app` in `/Applications`, select `Open`, and confirm the dialog.
