@@ -17,6 +17,7 @@ brew tap oliverjessner/tap
 | `bulkpixel` | Cask | Local-first batch image converter | `brew install --cask oliverjessner/tap/bulkpixel` |
 | `pinefetch` | Cask | Local-first yt-dlp desktop client | `brew install --cask oliverjessner/tap/pinefetch` |
 | `no-bullshit-rss` | Cask | Local-first RSS reader with clustered digests | `brew install --cask oliverjessner/tap/no-bullshit-rss` |
+| `pitchary` | Cask | A lightweight CRM for services, clients and deals. | `brew install --cask oliverjessner/tap/pitchary` |
 
 After tapping the repository, packages can also be installed with short names:
 
@@ -30,6 +31,7 @@ brew install sqlite-hub
 brew install --cask bulkpixel
 brew install --cask pinefetch
 brew install --cask no-bullshit-rss
+brew install --cask pitchary
 ```
 
 ## BulkPixel Cask
