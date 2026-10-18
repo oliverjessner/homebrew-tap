@@ -1,8 +1,8 @@
 class Fetchary < Formula
   desc "Stateless semantic web extraction for Node.js"
   homepage "https://github.com/oliverjessner/fetchary"
-  url "https://registry.npmjs.org/fetchary/-/fetchary-2.0.2.tgz"
-  sha256 "e24f570d04576ab01a80a3b5053ddbd33231269050227925a4194aef5230696d"
+  url "https://registry.npmjs.org/fetchary/-/fetchary-2.0.3.tgz"
+  sha256 "25c4bbfea5a0550a1557b62a3536662b7c77e7bf64527a90022b66da83d2ef08"
   license "MIT"
 
   depends_on "node"
