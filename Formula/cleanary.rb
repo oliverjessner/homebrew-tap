@@ -1,8 +1,8 @@
 class Cleanary < Formula
   desc "Count and remove duplicate text lines"
   homepage "https://github.com/oliverjessner/cleanary"
-  url "https://registry.npmjs.org/cleanary/-/cleanary-0.1.1.tgz"
-  sha256 "968741c3d57ddf9fc283915952900f9d95c9088fd097d88c79e179dbafb2a15b"
+  url "https://registry.npmjs.org/cleanary/-/cleanary-0.1.3.tgz"
+  sha256 "37d36621c9c7bf85996df4bdcda4c3e687bb4c9132b141a3c577bfa63c5a3010"
   license "MIT"
 
   depends_on "node"
