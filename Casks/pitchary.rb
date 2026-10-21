@@ -1,6 +1,6 @@
 cask "pitchary" do
-  version "0.6.2"
-  sha256 "f19e60f183fab20f0fc9b48e396323da7b678f38e21dc2758a7b87213dca6c33"
+  version "0.6.3"
+  sha256 "4e345f968d3f7c517a7761fd7653f7a9295ff1b37838368ce24c10b51eb672b6"
 
   url "https://github.com/oliverjessner/pitchary/releases/download/v#{version}/Pitchary_#{version}_aarch64.dmg"
   name "Pitchary"
@@ -8,7 +8,7 @@ cask "pitchary" do
   homepage "https://github.com/oliverjessner/pitchary"
 
   depends_on arch: :arm64
-  depends_on macos: :tahoe
+  depends_on macos: :golden_gate
 
   app "Pitchary.app"
 
