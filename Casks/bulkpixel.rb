@@ -1,6 +1,6 @@
 cask "bulkpixel" do
-  version "3.1.6"
-  sha256 "1299decaed178b3d51fac0c20c038df6584833374c2b395a87de698c1fb371cd"
+  version "3.2.0"
+  sha256 "61cc725035031d8ee99618d78cbdb3a5bd97b4eb843146baea7bd241845f5488"
 
   url "https://github.com/oliverjessner/BulkPixel/releases/download/v#{version}/BulkPixel_#{version}_aarch64_adhoc.dmg"
   name "BulkPixel"
