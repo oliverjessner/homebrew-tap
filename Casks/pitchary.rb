@@ -1,6 +1,6 @@
 cask "pitchary" do
-  version "0.6.4"
-  sha256 "f8c7773e3ad25e630d86f8d447190d92f4907dc219490d1389ecd56ec77f53d1"
+  version "0.6.5"
+  sha256 "30b6c43082be7f1b90dde81095efd23c4dd73d43405a28af2915f6ef23526d61"
 
   url "https://github.com/oliverjessner/pitchary/releases/download/v#{version}/Pitchary_#{version}_aarch64.dmg"
   name "Pitchary"
