@@ -1,6 +1,6 @@
 cask "no-bullshit-rss" do
-  version "2.0.2"
-  sha256 "9d19ab2285a311f163bbb145be3a480394be84f5403f12eae65efcff47583168"
+  version "2.1.0"
+  sha256 "eaa75a9e7d71fb199d31d07f5e8e95b3762051ecb668e323f5452f8b4daa26c7"
 
   url "https://github.com/oliverjessner/NO-BULLSHIT-RSS/releases/download/v#{version}/NO.BULLSHIT.RSS-#{version}-arm64.dmg"
   name "NO BULLSHIT RSS"
